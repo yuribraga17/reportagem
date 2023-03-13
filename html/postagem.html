@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Postagem de Reportagem</title>
+    <link rel="stylesheet" type="text/css" href="../css/postagem.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Postagem de Reportagem</h1>
+      <form action="/post" method="post" enctype="multipart/form-data">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="content">Conteúdo:</label>
+        <textarea id="content" name="content" rows="10" required></textarea>
+
+        <label for="type">Tipo:</label>
+        <select id="type" name="type" required>
+          <option value="" disabled selected>Selecione o tipo</option>
+          <option value="noticia">Notícia</option>
+          <option value="opiniao">Opinião</option>
+          <option value="entretenimento">Entretenimento</option>
+        </select>
+
+        <label for="file">Anexar Arquivo:</label>
+        <input type="file" id="file" name="file" accept="image/*, video/*" />
+
+        <input type="submit" value="Postar" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --content-width: 800px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+  
+nav li {
+    margin-right: 1rem;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+  
+h2 {
+    margin-bottom: 1rem;
+}
+  
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.post {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+}
+  
+.post h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+  
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+  
+.post video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.sidebar li {
+    margin-bottom: 10px;
+}
+  
+.sidebar a {
+    display: block;
+    padding: 10px;
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+.sidebar a:hover {
+    background-color: #555;
+    color: #fff;
+}
+  
